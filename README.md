@@ -16,11 +16,16 @@ And a tutorial for CSS flexbox: https://css-tricks.com/snippets/css/a-guide-to-f
 You can check validity of html and css files with the following links:
 
 - html: http://validator.w3.org/#validate_by_input
-- css: http://validator.w3.org/#validate_by_input
+- css: http://jigsaw.w3.org/css-validator/#validate_by_input
 
 First exercice in folder *portfolio/toplist*.
 
 ## CSS Frameworks, Responsive Layouts
+
+More information on flex:
+
+- https://developer.mozilla.org/en-US/docs/Web/CSS/flex
+- https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap
 
 Second exercice in folder *portfolio/framework*.
 
