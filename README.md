@@ -20,5 +20,9 @@ You can check validity of html and css files with the following links:
 
 First exercice in folder *portfolio/toplist*.
 
+## CSS Frameworks, Responsive Layouts
+
+Second exercice in folder *portfolio/framework*.
+
 
 
