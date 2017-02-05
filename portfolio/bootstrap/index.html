@@ -3,42 +3,51 @@
 <head>
 	<meta charset="utf-8">
 	<title>Portfolio with Bootstrap</title>
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">  
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </head>
 <body>
-	<div class="grid">
+	<div class="container">
         <!-- Header -->
-        <div>
-            <div>
-                <img alt="Logo" src="img/icon.png"/>
+        <div class="row header">
+            <div class="col-md-2">
+                <img class="img-responsive logo max-height-100" alt="Logo" src="img/icon.png"/>
             </div>
-            <div></div>
-            <div class="col-6">
+            <div class="col-md-4"></div>
+            <div class="col-md-6 text-right">
                 <div>
-                    <h1>RUGBY WORLD CUP</h1>
+                    <h1 class="text-uppercase">Rugby World Cup</h1>
                 </div>
                 <div>
                     <h2>2015's Edition</h2>
                 </div>                
             </div>                        
         </div>
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+            </div>
+        </div>
         <!-- Image -->
-        <div>
-            <div>
-                <img alt="Image" src="img/rwc.jpg"/>
+        <div class="row">
+            <div class="col-md-12">
+                <img class="img-responsive max-height-400" alt="Image" src="img/rwc.jpg"/>
             </div>
         </div>
         <!-- Best teams -->
-        <div>
-            <div>
+        <div class="row">
+            <div class="col-md-12">
                 <h2>Best Teams of Competition</h2>
             </div>
         </div>
         <!-- Details -->
-        <div>
-            <div>
+        <div class="row">
+            <div class="col-md-4 thumbnail">
                 <div>
-                    <img alt="New Zealand" src="img/new-zealand.jpg"/>
+                    <img class="img-responsive max-height-200" alt="New Zealand" src="img/new-zealand.jpg" data-toggle="modal" data-target="#team1"/>
                 </div>
                 <div>
                     <h3>New Zealand</h3>
@@ -47,9 +56,9 @@
                     <a href="http://www.nzru.co.nz/">New Zealand Rugby</a>
                 </div>
             </div>
-            <div>
+            <div class="col-md-4 thumbnail">
                 <div>
-                    <img alt="Australia" src="img/australia.jpg"/>
+                    <img class="img-responsive max-height-200" alt="Australia" src="img/australia.jpg"  data-toggle="modal" data-target="#team2"/>
                 </div>
                 <div>
                     <h3>Australia</h3>
@@ -58,9 +67,9 @@
                     <a href="http://www.aru.com.au/">Australian Rugby Union</a>
                 </div>
             </div>
-            <div>
+            <div class="col-md-4 thumbnail">
                 <div>
-                    <img class="thumbnail" alt="Argentina" src="img/argentina.jpg"/>
+                    <img class="img-responsive max-height-200" alt="Argentina" src="img/argentina.jpg" data-toggle="modal" data-target="#team3"/>
                 </div>
                 <div>
                     <h3>Argentina</h3>
@@ -70,6 +79,58 @@
                 </div>
             </div>            
         </div>
-	</div> <!-- end of grid -->
+	</div> <!-- end of container -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="team1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">New Zealand</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="img/new-zealand.jpg">
+                    The New Zealand national rugby union team, commonly called the All Blacks, represent New Zealand in men's rugby union, which is regarded as the country's national sport. The side has won the last two Rugby World Cups, in 2011 and 2015, as well as the inaugural tournament in 1987. They have a 77% winning record in test match rugby, and are the only international side with a winning record against every opponent. Since their international debut in 1903, they have lost to only six of the 19 nations they have played in test matches.Since the introduction of the World Rugby Rankings in 2003, New Zealand has held the number one ranking longer than all other teams combined.The All Blacks are statistically the best side to have played the game, and hold the record for the most consecutive test match wins for a tier one ranked nation.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="team2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Australia</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="img/australia.jpg">
+                    The Australian national rugby union team is the representative side of Australia in rugby union. The national team is nicknamed the Wallabies (or Qantas Wallabies for sponsorship purposes) and competes annually with Argentina, New Zealand, and South Africa in The Rugby Championship, in which they also contest the Bledisloe Cup with New Zealand, as well as the Mandela Challenge Plate with South Africa and the Puma Trophy with Argentina.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="team3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Argentina</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="img/argentina.jpg">
+                    The Argentina national rugby team, officially nicknamed Los Pumas, represents Argentina in international rugby union matches. The team, which plays in sky blue and white jerseys, is organised by the Argentine Rugby Union (UAR, from the Spanish: Unión Argentina de Rugby).
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
