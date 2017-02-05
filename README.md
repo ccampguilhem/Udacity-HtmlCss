@@ -27,6 +27,19 @@ More information on flex:
 - https://developer.mozilla.org/en-US/docs/Web/CSS/flex
 - https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap
 
+Ypu can look for founts from here when making a web page:
+
+https://fonts.google.com/
+
+Resources regarding image cropping:
+
+http://jonathannicol.com/blog/2014/06/16/centre-crop-thumbnails-with-css/
+https://medium.com/@chrisnager/center-and-crop-images-with-a-single-line-of-css-ad140d5b4a87#.9v8e0acsr
+
+Placeholders for images (usefull when creating layout):
+
+http://placehold.it
+
 Second exercice in folder *portfolio/framework*.
 
 
