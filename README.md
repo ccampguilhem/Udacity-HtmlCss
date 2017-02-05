@@ -42,5 +42,11 @@ http://placehold.it
 
 Second exercice in folder *portfolio/framework*.
 
+## Using a framework: Bootstrap
+
+Bootstrap main page: http://getbootstrap.com/
+
+Third exercice in folder *portfolio/bootstrap*.
+
 
 
